@@ -52,6 +52,7 @@ module.exports = {
         new ExtractTextPlugin("./css/[name].[chunkhash].css"),
         new webpack.ProvidePlugin({ //全局引入echarts
             echarts: 'echarts',
+            echartsGL: 'echarts-gl'
         })
     ]
 }
