@@ -95,12 +95,10 @@ let option = {
             }
         },
         markLine: {
-            data: [{ //平均值
-                    name: 'average',
-                    // 支持 'average', 'min', 'max'
-                    type: 'average'
-                },
-                {
+            label: {
+                position: 'middle'
+            },
+            data: [{
                     name: 'Y 轴值为 100 的水平线',
                     yAxis: 100
                 },
@@ -145,6 +143,13 @@ let option = {
                 show: true,
                 formatter: '{a}:{b}:{c}'
             }
+        },
+        markLine: {
+            data: [{ //平均值
+                name: 'average',
+                // 支持 'average', 'min', 'max'
+                type: 'average'
+            }, ]
         },
         markArea: {
             label: {
