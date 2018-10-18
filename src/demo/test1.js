@@ -9,7 +9,7 @@ let option = {
         subtext: '2018-10-18 demo',
         left: 'center',
         textStyle: {
-            fontSize: 20
+            // fontSize: 20
         }
     },
     tooltip: {
@@ -32,7 +32,15 @@ let option = {
         top: '12%',
         data: ['2018-10-18-1', '2018-10-18-2']
     },
-    toolbox: {},
+    toolbox: { //工具盒
+        orient: 'horizontal', //排列方式
+        right: '10%',
+        feature: {
+            saveAsImage: {},
+            restore: {},
+            dataView: {}
+        }
+    },
     grid: {
         top: '20%',
         containLabel: false
